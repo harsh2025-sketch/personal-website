@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Harsh Dinodia</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Tailwind CSS for additional utilities -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'accent': '#00aaff',
+                        'accent-dark': '#0088cc',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0a0a0a] text-white">
+
+    <!-- Header and Navigation -->
+    <header class="fixed top-0 left-0 w-full navbar z-50">
+        <nav class="container mx-auto flex items-center justify-between py-4 px-4">
+            <a href="index.html" class="nav-brand text-white hover:text-accent transition-colors duration-300">HARSH DINODIA</a>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-2">
+                <a href="index.html" class="nav-link text-gray-300 hover:text-accent">Home</a>
+                <a href="about.html" class="nav-link text-accent font-semibold">About</a>
+                <a href="portfolio.html" class="nav-link text-gray-300 hover:text-accent">Portfolio</a>
+                <a href="research.html" class="nav-link text-gray-300 hover:text-accent">Research</a>
+                <a href="blog.html" class="nav-link text-gray-300 hover:text-accent">Blog</a>
+                <a href="contact.html" class="nav-link text-gray-300 hover:text-accent">Contact</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-300 focus:outline-none p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="index.html" class="nav-link text-gray-300 hover:text-accent">Home</a>
+                <a href="about.html" class="nav-link text-accent font-semibold">About</a>
+                <a href="portfolio.html" class="nav-link text-gray-300 hover:text-accent">Portfolio</a>
+                <a href="research.html" class="nav-link text-gray-300 hover:text-accent">Research</a>
+                <a href="blog.html" class="nav-link text-gray-300 hover:text-accent">Blog</a>
+                <a href="contact.html" class="nav-link text-gray-300 hover:text-accent">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <main class="container mx-auto pt-20 pb-12">
+        <section id="about" class="px-4 py-12">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold mb-12 text-center text-white">About Me</h1>
+                
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <div class="space-y-6">
+                        <div class="card">
+                            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-white">My Story</h2>
+                            <div class="space-y-4 text-gray-300">
+                                <p>
+                                    I'm <strong class="text-white">Harsh Dinodia</strong>, an AI researcher and data science enthusiast with a deep-seated passion for living life to the fullest. My journey into this world began not just with code, but with an insatiable curiosity for what's possible, a feeling I also get from taking an unplanned trip.
+                                </p>
+                                <p>
+                                    For me, data isn't just numbers; it's the raw material for building a better future, and every new concept I explore feels like a new adventure. My educational path, a rigorous dual-degree in <strong class="text-accent">Computer Science and Data Science</strong> from Chandigarh University and IIT Madras, gave me a unique perspective.
+                                </p>
+                                <p>
+                                    It taught me how to not only build the systems but also to understand the complex patterns that govern them. This dual foundation has become my core strength, enabling me to approach problems from both theoretical and practical angles.
+                                </p>
+                                <p>
+                                    My passion lies in developing new concepts in artificial intelligence and continuously learning new things. I am a builder and a problem-solver at heart, always seeking to create intuitive and adaptive solutions.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="text-xl font-semibold mb-4 text-white">What Drives Me</h3>
+                            <p class="text-gray-300">
+                                This passion for continuous learning also extends to my personal life, where I love to write blogs about my experiences and observations. It's a way for me to share my journey with the world, both in technology and in life. Looking ahead, I am committed to crafting the digital world of tomorrow, one project and one line of code at a time.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-8">
+                        <div class="card text-center">
+                            <img src="https://placehold.co/400x400/00aaff/ffffff?text=Harsh+Dinodia" alt="Harsh Dinodia - Professional headshot" class="rounded-lg shadow-lg mx-auto mb-6 max-w-full h-auto">
+                            <h3 class="text-xl font-semibold text-white mb-2">AI Researcher & Data Scientist</h3>
+                            <p class="text-gray-400">Building the future with data and curiosity</p>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="text-xl font-semibold mb-4 text-white">Education</h3>
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-accent pl-4">
+                                    <h4 class="font-semibold text-white">Data Science</h4>
+                                    <p class="text-gray-400">IIT Madras</p>
+                                </div>
+                                <div class="border-l-4 border-accent pl-4">
+                                    <h4 class="font-semibold text-white">Computer Science</h4>
+                                    <p class="text-gray-400">Chandigarh University</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="text-xl font-semibold mb-4 text-white">Current Focus</h3>
+                            <ul class="space-y-2 text-gray-300">
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                    Artificial Intelligence Research
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                    Machine Learning Applications
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                    Data-Driven Solutions
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                    Technical Writing & Blogging
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Call to Action -->
+                <div class="text-center mt-16">
+                    <div class="card inline-block">
+                        <h3 class="text-2xl font-bold mb-4 text-white">Let's Build Something Amazing Together</h3>
+                        <p class="text-gray-300 mb-6">I'm actively seeking work opportunities that are as fulfilling as they are challenging.</p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+                            <a href="portfolio.html" class="btn btn-outline">View My Work</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1e1e1e] py-12 border-t border-gray-800">
+        <div class="container mx-auto text-center px-6">
+            <div class="flex justify-center space-x-8 mb-6">
+                <a href="https://www.linkedin.com/in/harsh-dinodia-b15148240" target="_blank" class="text-gray-400 hover:text-accent transition-colors duration-300 text-lg">LinkedIn</a>
+                <a href="https://github.com/harsh2025-sketch" target="_blank" class="text-gray-400 hover:text-accent transition-colors duration-300 text-lg">GitHub</a>
+                <a href="mailto:harshdinodia06@gmail.com" class="text-gray-400 hover:text-accent transition-colors duration-300 text-lg">Email</a>
+            </div>
+            <p class="text-gray-500">© 2025 Harsh Dinodia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

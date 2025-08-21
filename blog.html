@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Harsh Dinodia</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Tailwind CSS for additional utilities -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'accent': '#00aaff',
+                        'accent-dark': '#0088cc',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0a0a0a] text-white">
+    <!-- Header and Navigation -->
+    <header class="fixed top-0 left-0 w-full navbar z-50">
+        <nav class="container mx-auto flex items-center justify-between py-4 px-4">
+            <a href="index.html" class="nav-brand text-white hover:text-accent transition-colors duration-300">HARSH DINODIA</a>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-2">
+                <a href="index.html" class="nav-link px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-sm border border-white/10 hover:from-purple-600/30 hover:to-blue-600/30 hover:border-white/20 transition-all duration-300 text-white hover:text-purple-300">Home</a>
+                <a href="about.html" class="nav-link px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-sm border border-white/10 hover:from-purple-600/30 hover:to-blue-600/30 hover:border-white/20 transition-all duration-300 text-white hover:text-purple-300">About</a>
+                <a href="portfolio.html" class="nav-link px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-sm border border-white/10 hover:from-purple-600/30 hover:to-blue-600/30 hover:border-white/20 transition-all duration-300 text-white hover:text-purple-300">Portfolio</a>
+                <a href="research.html" class="nav-link px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-sm border border-white/10 hover:from-purple-600/30 hover:to-blue-600/30 hover:border-white/20 transition-all duration-300 text-white hover:text-purple-300">Research</a>
+                <a href="blog.html" class="nav-link px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-sm border border-white/10 hover:from-purple-600/30 hover:to-blue-600/30 hover:border-white/20 transition-all duration-300 text-purple-300 bg-purple-600/10 border-purple-400/30">Blog</a>
+                <a href="contact.html" class="nav-link px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-sm border border-white/10 hover:from-purple-600/30 hover:to-blue-600/30 hover:border-white/20 transition-all duration-300 text-white hover:text-purple-300">Contact</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-300 focus:outline-none p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="index.html" class="nav-link px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-sm border border-white/10 hover:from-purple-600/30 hover:to-blue-600/30 hover:border-white/20 transition-all duration-300 text-white hover:text-purple-300">Home</a>
+                <a href="about.html" class="nav-link px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-sm border border-white/10 hover:from-purple-600/30 hover:to-blue-600/30 hover:border-white/20 transition-all duration-300 text-white hover:text-purple-300">About</a>
+                <a href="portfolio.html" class="nav-link px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-sm border border-white/10 hover:from-purple-600/30 hover:to-blue-600/30 hover:border-white/20 transition-all duration-300 text-white hover:text-purple-300">Portfolio</a>
+                <a href="research.html" class="nav-link px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-sm border border-white/10 hover:from-purple-600/30 hover:to-blue-600/30 hover:border-white/20 transition-all duration-300 text-white hover:text-purple-300">Research</a>
+                <a href="blog.html" class="nav-link px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-sm border border-white/10 hover:from-purple-600/30 hover:to-blue-600/30 hover:border-white/20 transition-all duration-300 text-purple-300 bg-purple-600/10 border-purple-400/30">Blog</a>
+                <a href="contact.html" class="nav-link px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-sm border border-white/10 hover:from-purple-600/30 hover:to-blue-600/30 hover:border-white/20 transition-all duration-300 text-white hover:text-purple-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto pt-20 pb-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-4 text-white">Blog & Articles</h1>
+            <p class="text-xl text-center text-gray-300 mb-12 max-w-3xl mx-auto">
+                Exploring ideas, sharing insights, and documenting my journey in AI, data science, and technology.
+            </p>
+            
+            <!-- Coming Soon Section -->
+            <div class="text-center py-20">
+                <div class="card inline-block max-w-2xl">
+                    <div class="text-6xl mb-6">📝</div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Articles Coming Soon</h2>
+                    <p class="text-xl text-gray-300 mb-8">
+                        I'm working on exciting articles about AI research, data science innovations, and technology insights. 
+                        My blog will feature deep dives into machine learning, practical tutorials, and thoughts on the future of AI.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="contact.html" class="btn btn-primary">Get Notified</a>
+                        <a href="research.html" class="btn btn-outline">View Research</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1e1e1e] py-12 border-t border-gray-800">
+        <div class="container mx-auto text-center px-6">
+            <div class="flex justify-center space-x-8 mb-6">
+                <a href="https://www.linkedin.com/in/harsh-dinodia-b15148240" target="_blank" class="text-gray-400 hover:text-accent transition-colors duration-300 text-lg">LinkedIn</a>
+                <a href="https://github.com/harsh2025-sketch" target="_blank" class="text-gray-400 hover:text-accent transition-colors duration-300 text-lg">GitHub</a>
+                <a href="mailto:harshdinodia06@gmail.com" class="text-gray-400 hover:text-accent transition-colors duration-300 text-lg">Email</a>
+            </div>
+            <p class="text-gray-500">© 2025 Harsh Dinodia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+    <script>
+        const API_KEY = ""; // Keep this empty; the system provides it automatically
+
+        // Mock article content for demonstration
+        const mockArticleContent = {
+            'https://medium.com/your-blog-post-1': "This article explores the latest advancements in natural language processing (NLP). It discusses new transformer models, how they are trained on massive datasets, and their applications in chatbots and text summarization. The author provides code examples and explains the evolution of NLP models from basic statistical approaches to modern deep learning architectures.",
+            'https://dev.to/your-blog-post-2': "This article examines the future of AI in web development. It covers topics like AI-powered code completion tools, generative UI components, and how developers can leverage large language models (LLMs) to build more dynamic and intelligent web applications. The author predicts that AI will become an essential partner for developers, revolutionizing how we approach software development.",
+        };
+
+        document.querySelectorAll('.get-summary-btn').forEach(button => {
+            button.addEventListener('click', async (e) => {
+                const blogCard = e.target.closest('.card');
+                const articleUrl = blogCard.querySelector('a').href;
+                const summaryOutput = blogCard.querySelector('.summary-output');
+
+                // Check if summary already exists
+                if (summaryOutput.textContent.length > 10) {
+                    return;
+                }
+
+                // Show loading state
+                summaryOutput.innerHTML = '<div class="loading-spinner inline-block"></div> Generating summary...';
+                button.disabled = true;
+                button.textContent = 'Generating...';
+
+                try {
+                    // Simulate API delay
+                    await new Promise(resolve => setTimeout(resolve, 1500));
+                    
+                    const content = mockArticleContent[articleUrl];
+                    if (content) {
+                        // Create a simple summary (first two sentences)
+                        const sentences = content.split('. ');
+                        const summary = sentences.slice(0, 2).join('. ') + '.';
+                        summaryOutput.innerHTML = `<strong>Summary:</strong> ${summary}`;
+                    } else {
+                        summaryOutput.textContent = 'Summary not available for this article.';
+                    }
+                } catch (error) {
+                    console.error('Summary generation failed:', error);
+                    summaryOutput.textContent = 'Failed to generate summary. Please try again later.';
+                } finally {
+                    button.disabled = false;
+                    button.textContent = '✨ Get AI Summary';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
